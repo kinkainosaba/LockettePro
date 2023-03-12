@@ -64,9 +64,15 @@ public class LockettePro extends JavaPlugin {
     private void checkMcVersion() {
     	String[] serverVersion = Bukkit.getBukkitVersion().split("-");
 	    String version = serverVersion[0];
-        if (version.matches("1.17")) {
+        if (version.matches("1.19") || version.matches("1.19.1") || version.matches("1.19.2") || version.matches("1.19.3")) {
             plugin.getLogger().info("Compatible server version detected: " + version);
             is16version = true;
+        } else if (version.matches("1.18") || version.matches("1.18.1") || version.matches("1.18.2")) {
+	    	plugin.getLogger().info("Compatible server version detected: " + version);
+	    	is16version = true;
+        } else if (version.matches("1.17") || version.matches("1.17.1")) {
+	    	plugin.getLogger().info("Compatible server version detected: " + version);
+	    	is16version = true;
         } else if (version.matches("1.16") || version.matches("1.16.1") || version.matches("1.16.2") || version.matches("1.16.3") || version.matches("1.16.4") || version.matches("1.16.5")) {
 	    	plugin.getLogger().info("Compatible server version detected: " + version);
 	    	is16version = true;

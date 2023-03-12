@@ -202,6 +202,7 @@ public class Config {
                 "lang_fr.yml",
                 "lang_hu.yml",
                 "lang_it.yml",
+                "lang_jp.yml",
                 "lang_ko.yml",
                 "lang_pl.yml",
                 "lang_zh-cn.yml",
